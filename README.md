@@ -23,61 +23,34 @@ This project explores Walmart sales data using **Python** and **PostgreSQL** to 
 
 ---
 
-## 📁 Folder Structure
-
-```
-walmart-sales-analysis/
-│
-├── data/               # Raw and cleaned dataset files
-├── sql_queries/        # SQL scripts for insights and analysis
-├── notebooks/          # Jupyter notebooks (optional)
-├── main.py             # Main Python script for data processing
-├── requirements.txt    # List of Python dependencies
-└── README.md           # Project documentation
-```
-
----
 
 ## 🪜 Step-by-Step Guide
 
-### 1. Clone the Repository
-
-```bash
-git clone <repo-url>
-cd walmart-sales-analysis
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Set Up Kaggle API
+### 1. Set Up Kaggle API
 
 - Go to [Kaggle](https://www.kaggle.com/account), download your `kaggle.json` API token.
 - Place it in:
   - Windows: `C:\Users\<username>\.kaggle\kaggle.json`
   - Mac/Linux: `~/.kaggle/kaggle.json`
 
-### 4. Download the Dataset
+### 2. Download the Dataset
 
 ```bash
 kaggle datasets download -d <dataset-name>
 unzip *.zip -d data/
 ```
 
-### 5. Explore & Clean the Data
+### 3. Explore & Clean the Data
 
 - Remove duplicates and missing values
 - Convert data types (e.g., dates, prices)
 - Add computed columns (e.g., `Total Amount`)
 
-### 6. Load Data into PostgreSQL
+### 4. Load Data into PostgreSQL
 
 Update your database credentials in `main.py` and run the script to insert cleaned data into a PostgreSQL table.
 
-### 7. Run SQL Analysis
+### 5. Run SQL Analysis
 
 Write SQL queries to answer questions such as:
 
